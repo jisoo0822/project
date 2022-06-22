@@ -1,0 +1,71 @@
+
+        <section class="w100 bnr_wrap">
+            <div class="bnr notice">
+                <div class="w1200 nav_wrap">
+                    <h1>공지사항</h1>
+                    <div class="navigation">
+                        <div class="nav_left">
+                            <div class="home">
+                                <a href="/">
+                                    <img src="../img/notice/home.png" alt="">
+                                </a>
+                            </div>
+                            <div class="nav_title bg01"><a href="noticelist">알림마당</a></div>
+                            <div class="nav_subtitle bg02"><a href="#">공지사항</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="w1200">
+            <div class="title_wrap">
+                <div class="title_box">
+                    <b>공지사항</b>
+                    <span>서문시장의 어제와 오늘, 그리고 내일</span>
+                </div>
+                <div></div>
+            </div>
+        </section>
+        <section class="w1200 content">
+            <div class="noti_wrap">
+                <form id="noticeForm" name="noticeForm" method="post" action="/bs/ko/notice.do">
+                <input type="hidden" name="id" value="<%=row.id%>">
+                <div class="noti_title"><%= row.ntTitle %></div>
+                    <div class="noti_list">
+                        <div class="writer">
+                            <p class="border">작성자</p>
+                            <p><%= row.ntName %></p>
+                        </div>
+                        <div class="date"><%= row.ntUpdate %></div>
+                        <div class="hits">
+                            <p class="border">조회</p>
+                            <p>1,048회</p>  
+                        </div>
+                    </div>
+                <div class="noti_contents">
+                    <%= row.ntCont %>
+                </div>
+                <div class="noti_file">
+                    <p class="border">첨부파일</p>
+                    <a href="">
+                        <img src="../img/notice/icon_pdf.png">
+                        영업공지.pdf
+                    </a>
+                </div>
+            </form>
+        </section>
+        <section class="w1200">
+            <div class="btn_notice">
+                <div class="btn_next">
+                    <div class="btn_before"><a href="" class="btn">이전글</a></div>
+                    <div class="btn_after"><a href="" class="btn">다음글</a></div>
+                </div>
+                <div class="btn_next">
+                    <div  class="write" onclick="javascript:location.href='/notice_rewrite?id=<%=row.id%>'">수정</div>
+                    <div  class="write" onclick="javascript:location.href='/deletememo?id=<%=row.id%>'">삭제</div>
+                    <div class="list"><a href="noticelist" class="btn">목록</a></div>
+                </div>
+    
+            </div>
+            </div>
+        </section>

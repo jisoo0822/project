@@ -1,0 +1,23 @@
+
+h2{
+    font-size: 24px;
+    font-weight: bold;
+}
+.notiW_tb{
+    width: 100%;
+    border: 1px solid #333;
+}
+.notiW_tb td{
+    border: 1px dashed #333;
+    padding: 20px 10px;
+}
+tr>td:first-child{
+    text-align: center;
+}
+tr>td.submit{
+    text-align: right;
+}
+tr>td.submit>input{
+    width: 50px;
+    height: 30px;
+}

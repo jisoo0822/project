@@ -1,0 +1,73 @@
+<section class="w100 bnr_wrap">
+    <div class="bnr notice">
+        <div class="w1200 nav_wrap">
+            <h1>공지사항</h1>
+            <div class="navigation">
+                <div class="nav_left">
+                    <div class="home">
+                        <a href="/">
+                            <img src="../img/notice/home.png" alt="">
+                        </a>
+                    </div>
+                    <div class="nav_title bg01"><a href="#">알림마당</a></div>
+                    <div class="nav_subtitle bg02"><a href="#">공지사항</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="w1200 table">
+    <p class="table_info">
+        Total <b>158</b> Page <b><span>1</span> / 16</b> 
+    </p>
+    <table class="noti_tb">
+        <tr>
+            <th class="noti_num">번호</th>
+            <th >제목</th>
+            <th class="th">등록일</th>
+            <th class="pc th">작성자</th>
+            <th class="pc th">조회수</th>
+        </tr>
+
+        <% rows.forEach((row,index) => {  %>
+        <tr onclick="javascript:location.href='/notice?id=<%=row.id%>'">
+            <td><%= row.id %></td>
+            <td><%= row.ntTitle %></a></td>
+            <td><%= row.ntUpdate %></td>
+            <td class="pc"><%= row.ntName %></td>
+            <td class="pc">12</td>
+        </tr>
+        <%  }) %>
+    </table>
+    <div class="search_box">
+        <form id="noticeForm" name="noticeForm" method="post" action="/bs/ko/noticeList.do">
+        <input type="hidden" name="pageIndex" id="pageIndex" value="1" />
+        <div class="select_box">
+            <select id="searchCondition" name="searchCondition">
+                <option value="" >전체</option>
+                <option value="1" >제목</option>
+                <option value="2" >내용</option>
+            </select>
+            <div class="seach_wrap">
+                <input type="text" id="searchKeyword" name="searchKeyword" value="" placeholder="검색어를 입력하세요."/>
+                <span>
+                    <a href="#"></a>
+                </span>
+                <input type="button" value="글쓰기" onclick="javascript:location.href='/notice_write'">
+            </div>
+            
+        </div>
+        </form>
+    </div>
+    <div class="controll_box">
+        <a href="#"><img src="../img/btn_first.png"/></a>
+        <a href="#"><img src="../img/btn_prev.png"/></a>
+        <a href="#" class="num">1</a>
+        <a href="#" class="num" >2</a>
+        <a href="#" class="num" >3</a>
+        <a href="#" class="num" >4</a>
+        <a href="#" class="num" >5</a>
+        <a href="#"><img src="../img/btn_next.png"/></a>
+        <a href="#"><img src="../img/btn_last.png"/></a>
+    </div>
+</section>

@@ -1,0 +1,30 @@
+
+        <section class="w1200">
+            <h2>공지사항 작성</h2>
+
+            <form method="POST" action="/notice_rewrite">
+                <input type="hidden" name="id" value="<%=row.id%>">
+                <table class="notiW_tb">
+                    <tr>
+                        <td><label for="">제목</label></td>
+                        <td><input type="text" name="ntTitle" value="<%= row.ntTitle %>" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">이름</label></td>
+                        <td><input type="text" name="ntName" value="<%= row.ntName %>"></td>
+                    </tr>
+                    <tr>
+                        <td>내용 작성 : </td>
+                        <td><textarea name="ntCont" cols="100" rows="20">
+                            <%= row.ntCont %>
+                        </textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="submit" colspan="2">
+                            <input type="submit" value="저장">
+                            <input type="button" value="뒤로" onclick="javascript:location.href='/noticelist'">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>

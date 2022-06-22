@@ -1,0 +1,220 @@
+
+
+.sec{
+    padding: 100px 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border-bottom: 1px solid #c4c4c4;
+}
+.sec:last-child{
+    border: none;
+}
+.bnr_wrap{
+    position: relative;
+}
+.intro{
+    background-image: url(../img/intro/int_bnr3.png);
+}
+section h3{
+    font-size: 28px;
+    font-weight: bold;
+}
+section h4{
+    font-size: 14px;
+    font-weight: 600;
+}
+section h5{
+    font-size: 14px;
+    font-weight: 600;
+}
+section h6{
+    font-size: 24px;
+    font-weight: bold;
+}
+.int_box1{
+    padding-top: 100px;
+}
+.int_img{
+    width: 100%;
+    padding-top: 29.16%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.int_img1{
+    background-image: url(../img/intro/int_img1.png);
+}
+.int_img2{
+    background-image: url(../img/intro/int_img2.png);
+}
+.int_img3{
+    background-image: url(../img/intro/int_img3.png);
+}
+.txt_box{
+    margin: 20px 50px;
+}
+.txt_box1{
+    display: flex;
+    justify-content: center;
+    line-height: 24px;
+}
+.txt_box2>h4{
+    color: #535353;
+    font-weight: 500;
+}
+.map_img{
+    margin-bottom: 50px;
+}
+.traffic_wrap{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.int_icon{
+    width: 80px;
+    height: 80px;
+    background-size: cover;
+    background-position: 100% auto;
+    margin-right: 50px;
+}
+.address{
+    background-image: url(../img/intro/address.png);
+}
+.traffic_txt{
+    display: flex;
+    align-items: center;
+    /* padding-left: 50px;
+    box-sizing: border-box; */
+}
+.traffic_txt>.p_sub{
+    width: calc(100% - 35px);
+    text-align: left;
+    display: flex;
+}
+.traffic_txt>.p_bus{
+    width: calc(100% - 41px);
+    text-align: left;
+}
+.txt_bold{
+    font-size: 14px;
+    font-weight: bold;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.txt_basic{
+    font-size: 14px;
+}
+.subway{
+    background-image: url(../img/intro/subway.png);
+}
+.sub_icon{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-size:cover;
+    margin-right: 5px;
+}
+.txt1{
+    margin-left: 19px;
+}
+.sub_line2{
+    background: url('../img/intro/ico_traffic.png') no-repeat  -20px 0;
+    /* margin-right: 2px; */
+
+}
+.sub_line3{
+    background: url('../img/intro/ico_traffic.png') no-repeat -220px 0;
+    /* margin-right: 15px; */
+}
+.bus{
+    background-image: url(../img/intro/bus.png);
+}
+.bus_icon{
+    display: inline-block;
+    width: 26px;
+    height: 16px;
+    background-size: cover;
+    margin-right: 15px;
+}
+.bus1{
+    background: url('../img/intro/ico_traffic.png') no-repeat 0 -410px;
+}
+.bus2{
+    background: url('../img/intro/ico_traffic.png') no-repeat  -60px -410px;
+}
+.bus3{
+    background: url('../img/intro/ico_traffic.png') no-repeat -150px -410px;
+}
+.bus4{
+    background: url('../img/intro/ico_traffic.png') no-repeat -300px -410px;
+}
+.bus5{
+    background: url('../img/intro/ico_traffic.png') no-repeat -180px -410px;
+}
+.bus6{
+
+    background: url('../img/intro/ico_traffic.png') no-repeat 0 -430px;
+    width: 33px;
+	height: 16px;
+    margin-right: 10px
+}
+
+.tf_txt{
+    width: calc(100% - 130px);
+}
+.time{
+    background-image: url(../img/intro/time.png);
+}
+.table_wrap{
+    width: calc(100% - 130px);
+}
+.intro_tb{
+    width: 100%;
+    border: 1px solid #eee;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+.intro_tb>th, .int_td, .int_tr{
+    border: 1px solid #eee;
+  }
+/* .tb_title{
+    background-color: #eee;
+    text-align: center;
+} */
+
+.day{
+    font-weight: bold;
+}
+
+
+
+
+  @media only screen and (max-width: 1200px){
+
+    .w1200{
+        width: 100%;
+    }
+     
+}
+
+  @media only screen and (max-width: 767px){
+
+    .w1200{
+        width: 100%;
+    }
+    .int_nav{
+        display: none;
+    }
+    .int_img{
+        width: 100%;
+        padding-top: 67.69%;
+    }
+    .int_img1{
+        background-image: url(../img/intro/int_img1_m.png);
+    }
+    .bus_subtxt{
+        display: none;
+    }
+    
+  }
