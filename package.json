@@ -16,6 +16,7 @@
   "description": "project",
   "main": "server.js",
   "scripts": {
+    "start":"node ./bin/www.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
