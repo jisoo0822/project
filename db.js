@@ -2,11 +2,11 @@ const { Result } = require('express-validator');
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-    host:'localhost',
-    user:'root',
-    password:'1234',
+    host:'us-cdbr-east-05.cleardb.net',
+    user:'bb6905a6494de8',
+    password:'5d430568',
     port:'3306',
-    database:'seomoon',
+    database:'heroku_b34df5cdd0be985',
     dateStrings:'date'//날짜시간 출력
 })
 //리스트 전체 불러오기
