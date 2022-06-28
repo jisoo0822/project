@@ -3,8 +3,14 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var path = require('path');
 var expressLayouts = require('express-ejs-layouts');
+var http = this.require('https');
+
+setInterval(function(){
+    http.get("https://seomoon0822.herokuapp.com/")
+},600000)
 
 var homes = require('./routes/route.js');
+const internal = require('stream');
 
 var app = express();
 
