@@ -3,7 +3,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var path = require('path');
 var expressLayouts = require('express-ejs-layouts');
-var http = this.require('https');
 
 var homes = require('./routes/route.js');
 const internal = require('stream');
