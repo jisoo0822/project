@@ -117,7 +117,7 @@ nav>ul a{
     color: #fff;
     background: url(../img/notice/arrow-down.png) no-repeat 90% 30px;
     display: block;
-    padding: 20px 0 19px 20px;
+    padding: 18px 0 19px 18px;
     box-sizing: border-box;
 }
 .nav_subtitle{
@@ -133,6 +133,29 @@ nav>ul a{
     display: block;
     padding: 20px 0 19px 20px;
     box-sizing: border-box;
+}
+.sub_menu{
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+.sub_menu>li{
+    height: 60px;
+    background-color:rgba(255,213,60,0.8);
+}
+.sub_menu>li{
+    border-bottom: 1px solid #eee;
+}
+.sub_menu>li:last-child{
+    border-bottom: none;
+}
+.sub_menu a{
+    display: block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    padding: 18px 0 19px 18px;
 }
 .f_top{
     display: flex;

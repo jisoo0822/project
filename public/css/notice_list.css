@@ -48,6 +48,7 @@
     box-sizing: border-box;
     font-size: 14px;
     border-bottom: 1px dotted #ccc;
+    cursor: pointer;
 }
 .noti_tb td a{
     width: 100%;
